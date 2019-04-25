@@ -17,7 +17,7 @@ module.exports = NodeHelper.create({
 
 	// Override socketNotificationReceived method.
 	socketNotificationReceived: function(notification, payload) {
-		self = this;
+		var self = this;
 		this.sid = payload.sid;
 		this.apiKey = payload.apiKey;
 		this.url = "http://pvoutput.org/service/r2/getstatus.jsp";
